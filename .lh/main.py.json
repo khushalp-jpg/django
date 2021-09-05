@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1630849849020,
@@ -24,6 +24,10 @@
                 {
                     "date": 1630850605565,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-4\n\\ No newline at end of file\n+print 4+5\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630856336201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +0,0 @@\n-print 4+5\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1630849849020,
