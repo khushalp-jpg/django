@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1630861484717,
@@ -12,6 +12,26 @@
                 {
                     "date": 1630861497678,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n from django.urls import path\r\n-from . import views\n\\ No newline at end of file\n+from . import views\r\n"
+                },
+                {
+                    "date": 1630863000469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,6 @@\n from django.urls import path\r\n from . import views\r\n+\r\n+urlpatterns = [\r\n+    path('blog', views.post_list, name='post_list'),\r\n+]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863311762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n from django.urls import path\r\n from . import views\r\n \r\n urlpatterns = [\r\n-    path('blog', views.post_list, name='post_list'),\r\n+    path('blog\\', views.post_list, name='post_list'),\r\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863344812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n from django.urls import path\r\n from . import views\r\n \r\n urlpatterns = [\r\n-    path('blog\\', views.post_list, name='post_list'),\r\n+    path('', views.post_list, name='post_list'),\r\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863502496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,2 @@\n from django.urls import path\r\n-from . import views\r\n-\r\n-urlpatterns = [\r\n-    path('', views.post_list, name='post_list'),\r\n-]\n\\ No newline at end of file\n+from . import views\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863515486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,6 @@\n from django.urls import path\r\n-from . import views\n\\ No newline at end of file\n+from . import views\r\n+\r\n+urlpatterns = [\r\n+    path('', views.post_list, name='post_list'),\r\n+]\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1630861484717,

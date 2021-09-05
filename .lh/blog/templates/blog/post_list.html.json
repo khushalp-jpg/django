@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1630861917979,
@@ -16,6 +16,14 @@
                 {
                     "date": 1630862414793,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,26 @@\n <!DOCTYPE html>\r\n <html>\r\n \r\n <head>\r\n-    <title>Ola's blog</title>\r\n+    <title>Django Girls blog</title>\r\n </head>\r\n \r\n <body>\r\n-    <p>Hi there!</p>\r\n-    <p>It works!</p>\r\n+    <header>\r\n+        <h1><a href=\"/\">Django Girls Blog</a></h1>\r\n+    </header>\r\n+\r\n+    <article>\r\n+        <time>published: 14.06.2014, 12:14</time>\r\n+        <h2><a href=\"\">My first post</a></h2>\r\n+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\r\n+    </article>\r\n+\r\n+    <article>\r\n+        <time>published: 14.06.2014, 12:14</time>\r\n+        <h2><a href=\"\">My second post</a></h2>\r\n+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>\r\n+    </article>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863570960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+<!DOCTYPE html>\r\n+<html>\r\n+\r\n+<body>\r\n+    <p>Hi there!</p>\r\n+    <p>It works!</p>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630863591755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,23 @@\n <!DOCTYPE html>\r\n <html>\r\n+    <head>\r\n+        <title>Django Girls blog</title>\r\n+    </head>\r\n+    <body>\r\n+        <header>\r\n+            <h1><a href=\"/\">Django Girls Blog</a></h1>\r\n+        </header>\r\n \r\n-<body>\r\n-    <p>Hi there!</p>\r\n-    <p>It works!</p>\r\n-</body>\r\n+        <article>\r\n+            <time>published: 14.06.2014, 12:14</time>\r\n+            <h2><a href=\"\">My first post</a></h2>\r\n+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\r\n+        </article>\r\n \r\n+        <article>\r\n+            <time>published: 14.06.2014, 12:14</time>\r\n+            <h2><a href=\"\">My second post</a></h2>\r\n+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>\r\n+        </article>\r\n+    </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1630861917979,

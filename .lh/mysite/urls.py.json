@@ -3,11 +3,23 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1630861375925,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630862874493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n from django.urls import path\r\n \r\n urlpatterns = [\r\n     path('admin/', admin.site.urls),\r\n-    path('', include('blog.urls')),\r\n+    path('post', include('blog.urls')),\r\n ]\r\n"
+                },
+                {
+                    "date": 1630862889055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n from django.urls import path\r\n \r\n urlpatterns = [\r\n     path('admin/', admin.site.urls),\r\n-    path('post', include('blog.urls')),\r\n+    path('', include('blog.urls')),\r\n ]\r\n"
+                },
+                {
+                    "date": 1630862899926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,6 @@\n from django.urls import path\r\n \r\n urlpatterns = [\r\n     path('admin/', admin.site.urls),\r\n-    path('blog/', include('blog.urls')),\r\n+    path('blog/t', include('blog.urls')),\r\n ]\r\n"
                 }
             ],
             "date": 1630861375925,
