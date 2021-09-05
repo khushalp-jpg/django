@@ -1,0 +1,18 @@
+{
+    "sourceFile": "venv/.gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1630853371909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1630853371909,
+            "name": "Commit-0",
+            "content": "# created by virtualenv automatically\r\n*\r\n# Python\r\n*.pyc\r\n*~\r\n__pycache__\r\n\r\n# Env\r\n.env\r\nmyvenv/\r\nvenv/\r\n\r\n# Database\r\ndb.sqlite3\r\n\r\n# Static folder at project root\r\n/static/\r\n\r\n# macOS\r\n._*\r\n.DS_Store\r\n.fseventsd\r\n.Spotlight-V100\r\n\r\n# Windows\r\nThumbs.db*\r\nehthumbs*.db\r\n[Dd]esktop.ini\r\n$RECYCLE.BIN/\r\n\r\n# Visual Studio\r\n.vscode/\r\n.history/\r\n*.code-workspace"
+        }
+    ]
+}

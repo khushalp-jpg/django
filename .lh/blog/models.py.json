@@ -1,0 +1,22 @@
+{
+    "sourceFile": "blog/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1630852623964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630852638670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,18 @@\n+from django.conf import settings\r\n from django.db import models\r\n+from django.utils import timezone\r\n \r\n-# Create your models here.\r\n-from django.conf import settings\r\n\\ No newline at end of file\n-from django.db import models\r\n-from django.utils import timezone\n+\r\n+class Post(models.Model):\r\n+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)\r\n+    title = models.CharField(max_length=200)\r\n+    text = models.TextField()\r\n+    created_date = models.DateTimeField(default=timezone.now)\r\n+    published_date = models.DateTimeField(blank=True, null=True)\r\n+\r\n+    def publish(self):\r\n+        self.published_date = timezone.now()\r\n+        self.save()\r\n+\r\n+    def __str__(self):\r\n+        return self.title\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1630852623964,
+            "name": "Commit-0",
+            "content": "from django.db import models\r\n\r\n# Create your models here.\r\nfrom django.conf import settings\r\nfrom django.db import models\r\nfrom django.utils import timezone"
+        }
+    ]
+}
